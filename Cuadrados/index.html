@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuadrados</title>
+</head>
+<body>
+<style type="text/css"> 
+
+.sqaure1{ 
+width:100px; 
+height:100px; 
+background:red;
+margin:10px;
+border-style:solid;
+border-width:1px; 
+display:block;
+float:left;
+} 
+
+.sqaure2{ 
+width:100px; 
+height:100px; 
+background:blue;
+margin:10px; 
+border-style: solid;
+border-width:1px;  
+display:block;
+float:left; 
+} 
+
+</style> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+<div class="sqaure1"></div>
+<div class="sqaure2"></div> 
+</body>
+</html>
+
+<!-- Otra Solución -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Cuadrados</title>
+    <style type="text/css">
+      .square {
+        display: inline-block;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border: 1px solid black;
+      }
+      .square:nth-child(even) {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </body>
+</html> -->
+
+<!-- Por defecto <div> ocupa todo el ancho de la pantalla porque es un elemento de bloque. Hay dos formas de cambiar ese comportamiento:
+
+float: left
+display: inline-block
+Las dos tienen sus ventajas y desventajas. La ventaja de usar float: left es que con display: inline-block se crea un espacio adicional entre cada cuadrado (que depende del tamaño del texto), pero el problema de float: left es que no ocupa espacio y puede dañar la apariencia de otros elementos.
+
+Para aprender más sobre estas propiedades te recomendamos estos dos recursos:
+
+Float layout
+Inline block layout
+El cambio de color lo hicimos con la seudo-clase :nth-child(n) que recibe un número, una palabra clave, o una fórmula. Si quieres aprender más de :nth-child(n) te recomendamos este recurso.
+
+Flexbox
+
+Flexbox es una nueva iniciativa de la W3C (en la última etapa de aprobación) para hacer layouts de forma eficiente usando HTML y CSS. De esa forma, el reto se podría solucionar así:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cuadrados</title>
+    <style type="text/css">
+      body {
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .square {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border: 1px solid black;
+      }
+      .square:nth-child(even) {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </body>
+</html>
+Fíjate que no es necesario usar display: inline-block; o float: left;. El problema de Flexbox es que únicamente es soportado por los navegadores más recientes (p.e. IE9 no lo soporta). Si quieres aprender más de Flexbox te recomendamos este recurso. -->
